@@ -1,3 +1,67 @@
-<html>
-Hello Word
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Addiction Free Counter</title>
+  <meta name="description" content="Addiction free counter">
+  <meta name="author" content="Yaron Azulay">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/addiction.css">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="box">
+    <div class="row content green">
+        <h1 class="greentext" id="title1">1,000</h1>
+        <p>days without smoking weed.</p>
+    </div>
+    <div class="row content red">
+        <h1 class="redtext" id="title2">1,000</h1>
+        <p>days without smoking cigarettes.</p>
+      </div>
+  </div>
+
+  <script type = "text/javascript" > 
+    // JavaScript program to illustrate 
+    // calculation of no. of days between two date 
+
+    // To set two dates to two variables 
+    var weedate = new Date("04/20/2020");
+    var cigdate = new Date("05/01/2020");
+
+    var today = new Date();
+
+    var Weediff = today.getTime() - weedate.getTime();
+    var Cigdiff = today.getTime() - cigdate.getTime();
+
+    // To calculate the no. of days between two dates 
+    var Weedays = Math.floor(Weediff / (1000 * 3600 * 24));
+    var Cigdays = Math.floor(Cigdiff / (1000 * 3600 * 24)); 
+
+    //To display the final no. of days (result) 
+    document.getElementById("title1").innerHTML = Weedays;
+    document.getElementById("title2").innerHTML = Cigdays;
+
+    </script> 
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
 </html>
